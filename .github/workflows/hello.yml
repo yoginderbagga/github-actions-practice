@@ -21,3 +21,13 @@ jobs:
 
       - name: Print date 
         run : echo "the date is :" $(date)
+
+      - name: Print the current branch name
+        run : echo "Branch name is " $(git branch --show-current)
+
+      - name: List the files
+        run: echo "Total files are :" $(ls -l)
+
+      - name: Runner OS Info
+        run: echo "Runner OS is :" $( cat /etc/os-release)
+
